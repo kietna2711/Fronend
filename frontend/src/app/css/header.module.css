@@ -1,0 +1,164 @@
+.header {
+  width: 100%;
+  background-color: #fff !important;
+  padding: 0;
+}
+
+.container {
+  /* background-color: white;  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+  z-index: 1000;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  height: 64px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #e91e63;
+  line-height: 1.2;
+}
+
+.logo span {
+  font-weight: 900;
+}
+
+.logo em {
+  font-size: 13px;
+  font-style: italic;
+  color: #e91e63;
+  margin-top: 2px;
+}
+
+.search {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.searchMobile {
+  margin-bottom: 20px;
+  border-radius: 24px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.rightInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  height: 64px;
+}
+.userIcon{
+  color: #e91e63;
+  font-size: 28px;
+  cursor: pointer;
+}
+.heartIcon{
+  color: #e91e63;
+  font-size: 28px;
+  cursor: pointer;
+}
+.cartIcon {
+  color: #e91e63;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.menu {
+  justify-content: center !important;
+  font-weight: 700;
+  margin-top: 0px !important;
+  font-size: 16px;
+  margin-top: 8px;
+  border-bottom: none !important;
+  background:none;
+}
+
+.menu .ant-menu-item {
+  padding: 0 18px;
+}
+
+.menu a{
+  color: rgb(149, 125, 125) !important;
+}
+
+.menu .ant-menu-item:hover {
+  color: #e91e63 !important;
+  border-bottom: 2px solid #e91e63;
+}
+
+.mobileMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileMenu > li {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  position: relative;
+}
+
+.mobileMenu > li:hover {
+  background: #f5f5f5;
+}
+
+.hasSubmenu > .menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .arrowIcon {
+  transition: transform 0.3s ease;
+} */
+
+.submenu {
+  list-style: none;
+  padding-left: 16px;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.hasSubmenu:hover > .submenu {
+  max-height: 500px;
+}
+
+.submenuItem {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.submenuItem:hover {
+  color: #e91e63;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 95%;
+  }
+  .logo {
+    font-size: 18px;
+  }
+  .rightInfo {
+    gap: 8px;
+  }
+}
